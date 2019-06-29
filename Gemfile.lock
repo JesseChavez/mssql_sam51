@@ -33,7 +33,7 @@ GEM
       activemodel (= 5.1.7)
       activesupport (= 5.1.7)
       arel (~> 8.0)
-    activerecord-jdbc-alt-adapter (51.3.1-java)
+    activerecord-jdbc-alt-adapter (51.3.2-java)
       activerecord (~> 5.1.0, >= 5.1.7)
     activerecord-sqlserver-adapter (5.1.6)
       activerecord (~> 5.1.0)
