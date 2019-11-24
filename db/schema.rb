@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191124035208) do
+ActiveRecord::Schema.define(version: 20191124043542) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email"
@@ -52,6 +52,12 @@ ActiveRecord::Schema.define(version: 20191124035208) do
     t.image "legacy_photo", limit: 2147483647
     t.datetime_basic "available_at"
     t.datetime_basic "expires_at"
+  end
+
+  create_table "customs", primary_key: "remote_id", force: :cascade do |t|
+    t.string "task"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "reviews", force: :cascade do |t|
